@@ -570,6 +570,30 @@
                         </svg>
                     </a>
                 </div>
+                <div class="footer-newsletter">
+                    <h3 class="footer-to-us">Zapisz się do newslettera</h3>
+                    <form name="newsletter-form" class="newsletter-form">
+                        <label
+                            ><input
+                                type="email"
+                                name="newsletter-email"
+                                class="newsletter-input"
+                                placeholder="E-mail"
+                        /></label>
+                        <button type="submit" class="newsletter-btn">
+                            <span class="newsletter-btn-1">Zapisz się</span>
+                            <svg
+                                class="footer-icon-newsletter"
+                                width="24"
+                                height="24"
+                            >
+                                <use
+                                    href="images/icons.svg#icon-icon-send"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -577,6 +601,78 @@
                 <button type="button" class="close-btn" data-modal-close>
                     <span class="icon-cross"> &times;</span>
                 </button>
+                <p class="modal-title">
+                    Zostaw swoje dane w formularzu poniżej
+                </p>
+                <form name="contact-form" class="modal-form">
+                    <label class="modal-form-label">
+                        <svg class="modal-form-icon" width="20" height="20">
+                            <use
+                                href="images/icons.svg#icon-person-black-18dp-1"
+                            ></use>
+                        </svg>
+                        Imię
+                        <input
+                            type="text"
+                            name="contact-name"
+                            class="modal-form-input"
+                        />
+                    </label>
+                    <label class="modal-form-label">
+                        <svg class="modal-form-icon" width="20" height="20">
+                            <use
+                                href="images/icons.svg#icon-phone-black-18dp-1"
+                            ></use>
+                        </svg>
+                        Telefon
+                        <input
+                            type="tel"
+                            name="contact-phone"
+                            class="modal-form-input"
+                        />
+                    </label>
+                    <label class="modal-form-label">
+                        <svg class="modal-form-icon" width="20" height="20">
+                            <use
+                                href="images/icons.svg#icon-email-black-18dp-1"
+                            ></use>
+                        </svg>
+                        Email
+                        <input
+                            type="email"
+                            name="contact-email"
+                            class="modal-form-input"
+                        />
+                    </label>
+                    <label class="modal-form-label"
+                        >Komentarz
+                        <textarea
+                            name="contact-comment"
+                            placeholder="Wprowadź tekst"
+                            class="modal-form-input modal-form-textarea"
+                        ></textarea>
+                    </label>
+                    <label class="modal-form-check">
+                        <input
+                            type="checkbox"
+                            name="accept-rules"
+                            value="accept-rules"
+                        />
+                        Oświadczam iż akceptuję
+                        <a href="#" target="_top" class="modal-link"
+                            >Regulamin</a
+                        >
+                        i
+                        <a href="#" target="_top" class="modal-link"
+                            >Politykę Prywatności</a
+                        >.
+                    </label>
+                    <div class="modal-btn">
+                        <button type="submit" class="modal-form-btn">
+                            Wyślij
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>

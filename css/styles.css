@@ -639,12 +639,20 @@ figure:focus .projects-photo-overlay {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    /* justify-content: center; */
+
     align-items: center;
     gap: 24px;
     cursor: pointer;
     letter-spacing: 0.06em;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function-first);
 }
+.newsletter-btn:hover,
+.newsletter-btn:focus {
+    background-color: var(--brand-color-third);
+}
+
 .newsletter-btn-1 {
     margin-left: 42px;
 }
@@ -683,7 +691,7 @@ figure:focus .projects-photo-overlay {
     width: 528px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 1);
-    /* display: flex; */
+
     justify-content: flex-end;
     position: relative;
     z-index: 1;
@@ -704,27 +712,24 @@ figure:focus .projects-photo-overlay {
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
-    /* margin-top: 8px; */
-    /* margin-right: 8px; */
-    /* box-sizing: border-box; */
 
     position: absolute;
     top: 8px;
     left: 490px;
-    /* width: 30px; */
-    /* height: 30px; */
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
-    /* background-color: var(--brand-color-white); */
-    /* border-radius: 50%; */
-    /* cursor: pointer; */
-    /* display: flex; */
+
     justify-content: center;
     align-items: center;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function-first);
+}
+.close-btn:hover {
+    background-color: var(--brand-color-first);
+
+    color: var(--brand-color-fourth);
 }
 .icon-cross {
     font-size: 24px;
-    /* align-content: center; */
-    /* justify-content: center; */
 }
 .modal-title {
     font-weight: 700;
@@ -779,7 +784,6 @@ figure:focus .projects-photo-overlay {
 .modal-input {
     border: none;
     outline: none;
-    /* margin-left: 12px; */
 }
 
 .modal-form-input:hover,
@@ -793,12 +797,10 @@ figure:focus .projects-photo-overlay {
     resize: none;
     padding: 12px 16px;
     font-size: 12px;
-    color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-btn {
     margin-left: 4px;
-    /* margin-bottom: 50px; */
 }
 .modal-form-btn {
     padding: 10px 76px;
